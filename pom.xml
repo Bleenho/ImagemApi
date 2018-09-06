@@ -6,7 +6,7 @@
 	<artifactId>ImagemApi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-
+	<packaging>jar</packaging>
 	<name>ImagemApi</name>
 	<description>Gerenciamento de imagens</description>
 
@@ -54,19 +54,20 @@
 	<build>
 		<finalName>imagemApi</finalName>
 		<plugins>
+         	<plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
 				<configuration>
-					<webResources>
-						<resource>
-							<directory>${project.build.sourceDirectory}</directory>
-							<targetPath>sources</targetPath>
-						</resource>
-					</webResources>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-	
+
 </project>

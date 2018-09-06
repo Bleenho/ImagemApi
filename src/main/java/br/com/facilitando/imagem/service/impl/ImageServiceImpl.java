@@ -27,7 +27,7 @@ public class ImageServiceImpl implements ImagemService{
 	@Value("${path.uploader.file}")
 	private String uploaderFile;
 	
-	@Value("${endpoint.imagem}")
+	@Value("${endpoint.image}")
 	private String endpointGetImagem;
 	
 	@Override
