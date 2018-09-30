@@ -30,7 +30,7 @@ java -jar target\imagemApi.jar -Dspring.path.uploader.file={ImageRepositoryPath}
 	
 	ExternalImageUrl = localhost:8080/imagemApi/imagens/
 	
-### Access
+### Document
 
 localhost/imagenApi/swagger-ui.html
 
