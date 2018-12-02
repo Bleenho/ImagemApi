@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class SaveImageResponse {
+public class ResponseDefault {
 
-	private String imagemUrl;
-
-	private String msgRetorno;
+	private boolean success;
+	
+	private Object data;
 }

@@ -9,9 +9,15 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class SaveImageResponse {
-
-	private String imagemUrl;
-
-	private String msgRetorno;
+public class ProdutoResponse {
+	
+	private Long id;
+	
+	private String nome;
+	
+	private String imagePath;
+	
+	private String descricao;
+	
+	private Long precoVenda;
 }
